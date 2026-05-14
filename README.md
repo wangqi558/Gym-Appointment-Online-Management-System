@@ -106,6 +106,11 @@ code/
 ├── 数据集_updated.sql
 ├── gym_database_dataset_documentation.md
 ├── mysql-connector-j-9.7.0.jar
+|——test/
+|        ├── DatabaseDesignTest.java
+|        ├── NoStatusTest.java
+|        ├── SimpleMain.java
+|        └── TestDBConnection.java
 └── java/
     ├── Main.java
     ├── LoginFrame.java
@@ -119,11 +124,7 @@ code/
     ├── DatabaseAdapter.java
     ├── TimeSlotUtils.java
     ├── EquipmentValidationTest.java
-    └── test/
-        ├── DatabaseDesignTest.java
-        ├── NoStatusTest.java
-        ├── SimpleMain.java
-        └── TestDBConnection.java
+ 
 ```
 
 ## Important Java Files
@@ -194,24 +195,14 @@ The database name should be:
 group2_gym_system
 ```
 
-## Database Connection Configuration
-
-The database connection is configured in `java/DBConnection.java`:
-
-```java
-private static final String DB_URL = "jdbc:mysql://localhost:3306/group2_gym_system";
-private static final String DB_USER = "root";
-private static final String DB_PASSWORD = "Chy070204";
-```
-
-Before running the project, change `DB_PASSWORD` to your own MySQL password.
+ 
 
 ## How to Compile and Run
 
 Go to the `java` folder:
 
 ```bash
-cd code/java
+cd Gym Appointment Online Management System/java_code
 ```
 
 Compile the Java files:
