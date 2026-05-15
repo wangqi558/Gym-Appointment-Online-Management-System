@@ -180,19 +180,13 @@ The SQL file also creates:
 - indexes for appointment and equipment queries
 
 ## How to Set Up the Database
-
-Open MySQL Workbench or another MySQL client and run:
-
-```sql
-SOURCE /path/to/数据集_updated.sql;
-```
-
-Or open the SQL file in MySQL Workbench and click the execute button.
-
-The database name should be:
-
-```text
-group2_gym_system
+find DBConnection.java
+and then find :
+    // Database configuration
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/group2_gym_system";
+    private static final String DB_USER = "root";
+    private static final String DB_PASSWORD = "you mysql password here"; // Change this to your MySQL password
+    private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
 ```
 
  
