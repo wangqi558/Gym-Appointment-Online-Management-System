@@ -12,7 +12,7 @@ public class DBConnection {
     private Connection connection;
 
     // Database configuration
-    private static final String DB_URL = "the real pass of your asl file";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/group2_gym_system";
     private static final String DB_USER = "root";
     private static final String DB_PASSWORD = "you mysql password here"; // Change this to your MySQL password
     private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
