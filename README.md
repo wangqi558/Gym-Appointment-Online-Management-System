@@ -182,6 +182,7 @@ The SQL file also creates:
 ## How to Set Up the Database
 find DBConnection.java
 and then find :
+```java
     // Database configuration
     private static final String DB_URL = "jdbc:mysql://localhost:3306/group2_gym_system";
     private static final String DB_USER = "root";
