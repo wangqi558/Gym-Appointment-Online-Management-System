@@ -14,7 +14,7 @@ public class DBConnection {
     // Database configuration
     private static final String DB_URL = "jdbc:mysql://localhost:3306/group2_gym_system";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "Chy070204"; // Change this to your MySQL password
+    private static final String DB_PASSWORD = "your password for mySQL is here"; // Change this to your MySQL password
     private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     /**
