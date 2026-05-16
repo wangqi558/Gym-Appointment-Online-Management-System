@@ -487,7 +487,7 @@ public class AppointmentPanel extends JPanel {
                         JOptionPane.showMessageDialog(
                                 dialog,
                                 validationError,
-                                "时间选择错误",
+                                "Time Selection Error",
                                 JOptionPane.ERROR_MESSAGE
                         );
                         return;
@@ -537,8 +537,8 @@ public class AppointmentPanel extends JPanel {
                     if (DBConnection.getInstance().isUsingMockDatabase()) {
                         int newId = mockData.getAppointments().size() + 1;
 
-                        // MockData 的 Appointment 类如果还使用 int userId，这里只做兼容。
-                        // 真实数据库模式下不会走这里。
+                        // Compatibility fallback for older MockData Appointment userId formats.
+                        // The real database path does not normally reach this branch.
                         int mockUserId = 0;
                         try {
                             mockUserId = Integer.parseInt(userId);

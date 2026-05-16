@@ -99,9 +99,9 @@ public class TimeSlotUtils {
         if (!validateTimeSelection(startTime, endTime)) {
             double duration = calculateDurationHours(startTime, endTime);
             if (duration <= 0) {
-                return "结束时间必须晚于开始时间！";
+                return "End time must be later than start time!";
             } else if (duration > 2) {
-                return "预订时间不能超过2小时！";
+                return "Booking time cannot exceed 2 hours!";
             }
         }
         return null;
@@ -224,7 +224,7 @@ public class TimeSlotUtils {
      */
     public static String validateTimeSelection(String startTime, String endTime, String openTime, String closeTime) {
         if (startTime == null || endTime == null || openTime == null || closeTime == null) {
-            return "时间选择不能为空！";
+            return "Time selection cannot be empty!";
         }
 
         try {
@@ -235,28 +235,28 @@ public class TimeSlotUtils {
 
             // Check if start time is before open time
             if (start.isBefore(open)) {
-                return "开始时间不能早于体育馆开放时间！";
+                return "Start time cannot be earlier than the venue opening time!";
             }
 
             // Check if end time is after close time
             if (end.isAfter(close)) {
-                return "结束时间不能晚于体育馆关闭时间！";
+                return "End time cannot be later than the venue closing time!";
             }
 
             // Check if start time is after end time
             if (start.isAfter(end) || start.equals(end)) {
-                return "结束时间必须晚于开始时间！";
+                return "End time must be later than start time!";
             }
 
             // Check duration
             double duration = calculateDurationHours(startTime, endTime);
             if (duration > 2) {
-                return "预订时间不能超过2小时！";
+                return "Booking time cannot exceed 2 hours!";
             }
 
             return null; // Valid
         } catch (Exception e) {
-            return "时间格式错误！";
+            return "Invalid time format!";
         }
     }
 }

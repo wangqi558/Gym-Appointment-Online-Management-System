@@ -414,7 +414,7 @@ public class FacilityPanel extends JPanel {
 
                 String validationError = TimeSlotUtils.validateTimeSelection(startTime, endTime, openTime, closeTime);
                 if (validationError != null) {
-                    JOptionPane.showMessageDialog(dialog, validationError, "时间选择错误", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(dialog, validationError, "Time Selection Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
@@ -1044,7 +1044,7 @@ public class FacilityPanel extends JPanel {
 
                 String validationError = TimeSlotUtils.validateTimeSelection(startTime, endTime, openTime, closeTime);
                 if (validationError != null) {
-                    JOptionPane.showMessageDialog(dialog, validationError, "时间选择错误", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(dialog, validationError, "Time Selection Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
@@ -1224,7 +1224,7 @@ public class FacilityPanel extends JPanel {
 
                 String validationError = TimeSlotUtils.validateTimeSelection(startTime, endTime, openTime, closeTime);
                 if (validationError != null) {
-                    JOptionPane.showMessageDialog(dialog, validationError, "时间选择错误", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(dialog, validationError, "Time Selection Error", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
 
